@@ -1,0 +1,8 @@
+<h1>Create a task</h1>
+<a href="{% url 'tasks' %}">Home</a>
+<form method="post" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="submit">
+
+</form>
