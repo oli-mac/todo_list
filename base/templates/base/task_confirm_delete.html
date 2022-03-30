@@ -1,3 +1,6 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
 <a href="{% url 'tasks' %}">Home</a>
 
 
@@ -6,3 +9,5 @@
     <p>Are You Sure you want to continue Deleting "{{task}}" ?</p>
     <input type="submit" value="Delete"/>
 </form>
+
+{% endblock content %}

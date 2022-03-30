@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo | organize your tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #22668d;
+            font-family: 'Nunito', sans-serif;
+            padding-top: 50px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            font-family: 'Raleway', sans-serif;
+        }
+        a,
+        p {
+            color: #22668d
+        }
+        input {
+            outline: none;
+            /* border: none; */
+        }
+        a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+
+        }
+
+        .header-box {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            background: #27fc0b
+        }
+
+        .header-box a {
+            color: rgb(247, 247, 247);
+            padding: 8px;
+            text-decoration: none;
+        }
+        .header-box a:hover {
+            color: #22668d;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
